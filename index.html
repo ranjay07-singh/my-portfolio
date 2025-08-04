@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjay Singh - Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <nav class="fixed top-0 w-full z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div
+                    class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Ranjay Singh
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">Home</a>
+                    <a href="#about"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">About</a>
+                    <a href="#education"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">Education</a>
+                    <a href="#projects"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">Projects</a>
+                    <a href="#skills"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">Skills</a>
+                    <a href="#contact"
+                        class="nav-link text-gray-300 hover:text-blue-400 transition-all duration-300 relative">Contact</a>
+                </div>
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-gray-300 ml-4 p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-gray-700">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">Home</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">About</a>
+                <a href="#education"
+                    class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">Education</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center gradient-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="floating absolute top-20 left-10 w-20 h-20 bg-white rounded-full"></div>
+            <div class="floating absolute top-40 right-20 w-16 h-16 bg-blue-300 rounded-full"
+                style="animation-delay: 1s;"></div>
+            <div class="floating absolute bottom-40 left-20 w-12 h-12 bg-purple-300 rounded-full"
+                style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="text-center px-4 z-10 slide-in-up">
+            <div
+                class="w-60 h-60 mx-auto mt-10 mb-8 rounded-full bg-white/20 flex items-center justify-center text-8xl pulse-glow overflow-hidden">
+                <img src="assets/profile.jpg" alt="Profile" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Hi, I'm <span class="bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent">Ranjay
+                    Singh</span>
+            </h1>
+            <div class="text-2xl md:text-3xl mb-8 h-12">
+                <span id="typing-text" class="typing-animation"></span>
+            </div>
+            <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+                Computer Science student passionate about creating innovative solutions and beautiful user experiences
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('projects')"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                    View My Work
+                </button>
+                <button onclick="scrollToSection('contact')"
+                    class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
+                    Let's Connect
+                </button>
+                <button id="download-resume-btn"
+                    class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+                    Download Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 slide-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    I'm a dedicated Computer Science student with a passion for full-stack development, data analysis
+                    and emerging technologies
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="slide-in-left">
+                    <div class="relative">
+                        <div
+                            class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center text-9xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                            🎓
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-3xl animate-bounce">
+                            ⭐
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-in-right">
+                    <h3
+                        class="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                        My Journey
+                    </h3>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        Pursuing my Master’s in Computer Science at Anna University, Chennai, with a strong foundation
+                        in software engineering,
+                        data analysis, and algorithms. Passionate about building user-centric solutions to real-world
+                        problems.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-700 p-6 rounded-xl card-3d">
+                            <div class="text-3xl mb-3">🏫</div>
+                            <h4 class="font-semibold text-blue-400 mb-2">Education</h4>
+                            <p class="text-gray-300">Anna University - Master of Computer Application</p>
+                            <p class="text-sm text-gray-400">Expected 2026</p>
+                        </div>
+
+                        <div class="bg-gray-700 p-6 rounded-xl card-3d">
+                            <div class="text-3xl mb-3">🏆</div>
+                            <h4 class="font-semibold text-blue-400 mb-2">GPA</h4>
+                            <p class="text-gray-300">8.32/10.0</p>
+                            <p class="text-sm text-gray-400">Consistent Academic Performer</p>
+                        </div>
+
+                        <div class="bg-gray-700 p-6 rounded-xl card-3d">
+                            <div class="text-3xl mb-3">💼</div>
+                            <h4 class="font-semibold text-blue-400 mb-2">Experience</h4>
+                            <p class="text-gray-300">1+ Years</p>
+                            <p class="text-sm text-gray-400">Projects</p>
+                        </div>
+
+                        <div class="bg-gray-700 p-6 rounded-xl card-3d">
+                            <div class="text-3xl mb-3">🌟</div>
+                            <h4 class="font-semibold text-blue-400 mb-2">Focus</h4>
+                            <p class="text-gray-300">Full-Stack Dev</p>
+                            <p class="text-sm text-gray-400">& Data Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 slide-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Education</h2>
+                <p class="text-xl text-gray-300">Career Highlights & Educational Milestones</p>
+            </div>
+
+            <div class="relative">
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500">
+                </div>
+
+                <div class="space-y-16">
+                    <div class="flex items-center slide-in-left">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-blue-400 mb-2">B.Sc with Computer Science</h3>
+                                <p class="text-gray-300 mb-2">Dronacharya Govt. College, Gurgaon (Gurugram University,
+                                    Gurugram)</p>
+                                <p class="text-sm text-gray-400 mb-3">Jun-2022</p>
+                                <p class="text-gray-300">Achieved first division.</p>
+                            </div>
+                        </div>
+                        <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-gray-900 z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <div class="flex items-center slide-in-right">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-8 h-8 bg-purple-500 rounded-full border-4 border-gray-900 z-10"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-purple-400 mb-2">12th standard</h3>
+                                <p class="text-gray-300 mb-2">Govt. Sr. Sec. School, UE, Sec-4/7, Gurgaon, Haryana</p>
+                                <p class="text-sm text-gray-400 mb-3">May-2019</p>
+                                <p class="text-gray-300">Achieved 80.4% marks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center slide-in-left">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-green-400 mb-2">10th standard</h3>
+                                <p class="text-gray-300 mb-2">Govt. Sr. Sec. School, UE, Sec-4/7, Gurgaon, Haryana</p>
+                                <p class="text-sm text-gray-400 mb-3">May-2017</p>
+                                <p class="text-gray-300">Achieved 85% marks.</p>
+                            </div>
+                        </div>
+                        <div class="w-8 h-8 bg-green-500 rounded-full border-4 border-gray-900 z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 slide-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
+                <p class="text-xl text-gray-300 mb-8">Explore my latest work and innovations</p>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button
+                        class="filter-btn active px-6 py-3 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                        data-filter="all">
+                        All Projects
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                        data-filter="web">
+                        Web Apps
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                        data-filter="mobile">
+                        Mobile
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                        data-filter="ai">
+                        AI/ML
+                    </button>
+                </div>
+            </div>
+
+            <div id="projects-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center">
+
+                <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-2xl card-3d" data-category="web"
+                    onclick="openProjectModal('smartParking')">
+                    <div
+                        class="h-48 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-6xl relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <span class="relative z-10">🚖</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Smart Parking System</h3>
+                        <p class="text-gray-400 mb-4">IoT-enabled smart parking system with real-time slot monitoring to
+                            optimize traffic flow and space utilization.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-600 text-blue-100 rounded-full text-sm">ReactJS</span>
+                            <span class="px-3 py-1 bg-green-600 text-green-100 rounded-full text-sm">ThingSpeak</span>
+                            <span class="px-3 py-1 bg-purple-600 text-purple-100 rounded-full text-sm">TypeScript</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                                onclick="handleViewDetails()">
+                                View Details
+                            </button>
+
+                            <a href="https://github.com/ranjay07-singh/smart-parking-system" target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex-1 text-center border border-purple-600 text-purple-400 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-colors"
+                                onclick="event.stopPropagation();">
+                                GitHub
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-2xl card-3d"
+                    data-category="mobile" onclick="openProjectModal('expenseTracker')">
+                    <div
+                        class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-6xl relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <span class="relative z-10">💰</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Expense Tracker App</h3>
+                        <p class="text-gray-400 mb-4">Cross-platform mobile app with expense tracking, financial
+                            insights, and multilingual state-wise tips.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-cyan-600 text-cyan-100 rounded-full text-sm">React Native</span>
+                            <span class="px-3 py-1 bg-orange-600 text-orange-100 rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-red-600 text-red-100 rounded-full text-sm">Cloudinary</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                                onclick="handleViewDetails()">
+                                View Details
+                            </button>
+
+                            <a href="https://github.com/ranjay07-singh/ExpenseTracker" target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex-1 text-center border border-purple-600 text-purple-400 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-colors"
+                                onclick="event.stopPropagation();">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-2xl card-3d" data-category="web"
+                    onclick="openProjectModal('placementPortal')">
+                    <div
+                        class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-6xl relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <span class="relative z-10">👩‍🎓</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Placement Portal</h3>
+                        <p class="text-gray-400 mb-4">Interactive portal for streamlined placement management with
+                            students data and admin-controlled updates.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-600 text-blue-100 rounded-full text-sm">ReactJS</span>
+                            <span class="px-3 py-1 bg-green-600 text-green-100 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-600 text-gray-100 rounded-full text-sm">Firebase</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition-colors"
+                                onclick="handleViewDetails()">
+                                View Details
+                            </button>
+
+                            <a href="https://github.com/ranjay07-singh/" target="_blank" rel="noopener noreferrer"
+                                class="flex-1 text-center border border-orange-600 text-orange-400 py-2 rounded-lg hover:bg-orange-600 hover:text-white transition-colors"
+                                onclick="event.stopPropagation();">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 slide-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Skills & Expertise</h2>
+                <p class="text-xl text-gray-300">Technologies and tools I work with</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Technical Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Java</span>
+                                <span class="text-blue-400 font-bold">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-blue-500 to-cyan-500 h-3 rounded-full"
+                                    data-width="75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Python</span>
+                                <span class="text-blue-400 font-bold">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full"
+                                    data-width="70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Database Management(PostGresSQL)</span>
+                                <span class="text-blue-400 font-bold">65%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-green-500 to-teal-500 h-3 rounded-full"
+                                    data-width="65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">MongoDB</span>
+                                <span class="text-blue-400 font-bold">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-yellow-500 to-orange-500 h-3 rounded-full"
+                                    data-width="70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Data Analysis & ML</span>
+                                <span class="text-blue-400 font-bold">60%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-red-500 to-pink-500 h-3 rounded-full"
+                                    data-width="60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">JavaScript/TypeScript</span>
+                                <span class="text-blue-400 font-bold">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full"
+                                    data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-in-right">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Core Competencies</h3>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="relative w-32 h-32 mx-auto mb-4">
+                                <svg class="w-32 h-32 transform -rotate-90">
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-gray-700" />
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-blue-500 progress-circle"
+                                        stroke-dasharray="0 351.86" data-progress="70" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-blue-400">70%</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 font-medium">Frontend Development</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="relative w-32 h-32 mx-auto mb-4">
+                                <svg class="w-32 h-32 transform -rotate-90">
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-gray-700" />
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-green-500 progress-circle"
+                                        stroke-dasharray="0 351.86" data-progress="65" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-green-400">65%</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 font-medium">Backend Development</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="relative w-32 h-32 mx-auto mb-4">
+                                <svg class="w-32 h-32 transform -rotate-90">
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-gray-700" />
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-purple-500 progress-circle"
+                                        stroke-dasharray="0 351.86" data-progress="70" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-purple-400">70%</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 font-medium">Data Analysis & Visualization</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="relative w-32 h-32 mx-auto mb-4">
+                                <svg class="w-32 h-32 transform -rotate-90">
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-gray-700" />
+                                    <circle cx="64" cy="64" r="56" stroke="currentColor" stroke-width="8"
+                                        fill="transparent" class="text-orange-500 progress-circle"
+                                        stroke-dasharray="0 351.86" data-progress="65" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-orange-400">65%</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 font-medium">DevOps & Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 slide-in-up">
+                <h3 class="text-2xl font-bold mb-8 text-center">Technology Stack</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">🍵</div>
+                        <span class="text-gray-300 font-medium">Java</span>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">🐍</div>
+                        <span class="text-gray-300 font-medium">Python</span>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">🍃</div>
+                        <span class="text-gray-300 font-medium">MongoDB</span>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">☁️</div>
+                        <span class="text-gray-300 font-medium">AWS</span>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">⚛️</div>
+                        <span class="text-gray-300 font-medium">React</span>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors card-3d">
+                        <div class="text-4xl mb-3">🟢</div>
+                        <span class="text-gray-300 font-medium">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 slide-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    I'm always excited to discuss new opportunities, collaborate on projects, or just chat about
+                    technology!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-bold mb-8">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <!-- Email -->
+                        <div class="flex items-center p-4 bg-gray-900 rounded-xl card-3d">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-envelope text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <p class="text-white font-medium text-lg">ranjaysingh1729@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="flex items-center p-4 bg-gray-900 rounded-xl card-3d">
+                            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-6">
+                                <i class="fab fa-linkedin-in text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">LinkedIn</p>
+                                <p class="text-white font-medium text-lg">linkedin.com/in/ranjay-singh07</p>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="flex items-center p-4 bg-gray-900 rounded-xl card-3d">
+                            <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mr-6">
+                                <i class="fab fa-github text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">GitHub</p>
+                                <p class="text-white font-medium text-lg">github.com/ranjay07-singh</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center p-4 bg-gray-900 rounded-xl card-3d">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-phone-alt text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p class="text-white font-medium text-lg">+91 9310115516</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/ranjay-singh07/" target="_blank"
+                                class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors transform hover:scale-110">
+                                <span class="text-xl">🔗</span>
+                            </a>
+                            <!-- GitHub -->
+                            <a href="https://github.com/ranjay07-singh" target="_blank"
+                                class="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-black transition-colors transform hover:scale-110">
+                                <span class="text-xl">🐙</span>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/ranjay_singh07" target="_blank"
+                                class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full flex items-center justify-center hover:brightness-110 transition-colors transform hover:scale-110">
+                                <span class="text-xl">📸</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide-in-right">
+                    <form class="space-y-6 bg-gray-900 p-8 rounded-2xl" id="contact-form">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-300 font-medium mb-3">First Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                    placeholder="Firstname" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-300 font-medium mb-3">Last Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                    placeholder="Lastname" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-300 font-medium mb-3">Email</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                placeholder="email@example.com" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-300 font-medium mb-3">Subject</label>
+                            <select
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-300 font-medium mb-3">Message</label>
+                            <textarea rows="5"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-9 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div
+                    class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+                    Ranjay Singh
+                </div>
+                <p class="text-gray-400 mb-3">Building the future, one line of code at a time</p>
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="#home" class="text-gray-400 hover:text-blue-400 font-bold transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-blue-400 font-bold transition-colors">About</a>
+                    <a href="#projects"
+                        class="text-gray-400 hover:text-blue-400 font-bold transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-blue-400 font-bold transition-colors">Contact</a>
+                </div>
+                <p class="text-gray-500">&copy; 2025 Ranjay Singh. All rights reserved.</p>
+                <p class="text-gray-600 text-sm mt-2">Designed with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-3xl font-bold"></h3>
+                    <button onclick="closeProjectModal()" class="text-gray-400 hover:text-white text-2xl">×</button>
+                </div>
+                <div id="modal-content" class="space-y-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
